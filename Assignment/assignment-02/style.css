@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:0 30px;
+    box-shadow: 0px 0px 5px grey;
+}
+.highlight{
+    color: #FF008E;
+}
+.button{
+    background-color: #ec0a86af;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.banner{
+    height: calc(100vh - 80px);
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.banner-left h1{
+    font-size: 45px;
+    color: black;
+}
+.banner-left p{
+    color:black;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+.banner-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-right img{
+    width: 80%;
+}
+ /* logos */
+.logos{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-content: center;
+}
+
+
+/* POPULAR COLLECTION */
+
+.product-title{
+    text-align: center;
+}
+.product-title h2{
+    font-size: 40px;
+    display: inline-block;
+    margin: 50px;
+
+}
+
+.product{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+}
+.product-details h2 {
+    margin-top: 20px;  
+}
+.product-details p{
+    padding: 5px 0;
+}
+.product-details img{
+    width: 90%;
+    height: 200px;
+}
+.icon{
+    color: rgb(245, 140, 3);
+}
+
+
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 30px;
+    background-color: rgb(17, 17, 43);
+}
+footer p{
+    color: white;
+    text-align: center;
+}
+
+#name{
+    font-size: 20px;
+    font-weight: 700;
+}
+.fab{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+.social-icon{
+    margin-top: 20px;
+    text-align: center;
+}
+.social-icon a{
+    text-align: center;
+    padding: 0 10px;
+}
+
+/* Mobile and others device style */
+
+@media (max-width:689px){
+   .banner{
+       display: flex;
+       align-items: center;
+   }
+    .banner-left h1{
+        font-size: 25px;
+    }
+.banner-right{
+    order: 2;
+}
+.product{
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    padding-left: 15px;
+}
+.logos{
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+}
+}
+
+@media (max-width:992px){
+    .product{
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        padding-left: 15px;
+    }
+    .banner{
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        padding-left: 15px;
+    }
+
+.banner-right{
+    order: 2;
+}
+
+    
+}
